@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Text Editor | by Qasim</title>
+        <style type="text/css">
+            *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    display:grid;
+    place-items:center;
+    height:100vh;
+    background:#eee;
+}
+/* by Qasim */
+.box{
+    padding:20px;
+    width:80%;
+    background:#fff;
+    box-shadow:0 0 20px rgba(0,0,0,0.1);
+    border-radius:3px;
+}
+@media screen and (max-width:480px){
+    .box{
+        width:96%;
+    }
+}
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            <textarea name="text"></textarea>
+        </div>
+        <script src="https://cdn.ckeditor.com/4.16.1/standard/ckeditor.js"></script>
+        <script>
+            CKEDITOR.replace("text");
+        </script>
+    </body>
+</html>
